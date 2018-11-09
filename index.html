@@ -35,48 +35,57 @@
             <label class="input-group-text" for="inputGroupSelect01">Posts</label>
           </div>
           <select class="custom-select" id="inputGroupSelect01">
-            <option selected>Introduction</option>
-            <option value="1">Post</option>
-            <option value="2">Post</option>
-            <option value="3">Another post</option>
+            <option selected>Posts</option>
           </select>
         </div>
       </aside>
       <div class="col-9">
         <div class="post">
-          <h2>Introduction</h2>
-          <hr>
-          <article>
-            <p>My name is Celia and I am a teacher turned engineer! I taught in elementary school for 4 years, and I
-              was
-              intrigued by the technology that my students had access to - and I saw lots of room for improvement! I
-              started learning on my own and fell in love with coding. I am currently going through a 6 month bootcamp,
-              and blogging as I go!</p>
-          </article>
-          <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link edit-post" href="#">Edit</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-danger delete-post" href="#">Delete</a>
-            </li>
-          </ul>
+          <div class="post-content">
+          </div>
+          <div class="post-buttons">
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link edit-post" href="#">Edit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger delete-post" href="#">Delete</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <form class="form hidden">
+        <form class="form-new hidden">
           <div class="form-group">
             <label for="title">Title</label>
             <input type="text" class="form-control" id="title">
           </div>
           <div class="form-group">
-            <label for="post-content">Content</label>
-            <textarea class="form-control" id="post-content" rows="5"></textarea>
+            <label for="date">Date</label>
+            <input type="text" class="form-control" id="date">
+          </div>
+          <div class="form-group">
+            <label for="content">Content</label>
+            <textarea class="form-control" id="content" rows="5"></textarea>
           </div>
           <button type="submit" class="btn btn-info btn-large">Create New Post</button>
         </form>
+        <form class="form-edit hidden">
+          <div class="form-group">
+            <label for="titleEdit">Title</label>
+            <input type="text" class="form-control" id="titleEdit">
+          </div>
+          <div class="form-group">
+            <label for="dateEdit">Date</label>
+            <input type="text" class="form-control" id="dateEdit">
+          </div>
+          <div class="form-group">
+            <label for="contentEdit">Content</label>
+            <textarea class="form-control" id="contentEdit" rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-info btn-large">Update Post</button>
+        </form>
       </div>
     </div>
-
-
   </main>
 </body>
 
