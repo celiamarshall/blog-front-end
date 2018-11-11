@@ -1,6 +1,5 @@
 const axios = require('axios')
 const BASE_URL = 'https://celia-marshall-blog-api.herokuapp.com/posts'
-//const BASE_URL = 'http://localhost:3000/posts'
 
 function getPosts() {
   return axios.get(BASE_URL)

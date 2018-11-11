@@ -145,15 +145,12 @@ editForm.addEventListener('submit', (event) => {
 function renderOptions(posts) {
   const optionsHTMLArray = posts.map(post => optionsTemplate(post))
 
-  //dropdown.innerHTML = ''
-
   dropdown.innerHTML = optionsHTMLArray.join('')
 
   dropdown.addEventListener('change', (event) => {
     form.classList.add('hidden')
     editForm.classList.add('hidden')
     blogPost.classList.remove('hidden')
-    //blogPost.innerHTML = ''
 
     getPost(dropdown.value)
       .then((response) => {
